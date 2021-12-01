@@ -1,6 +1,20 @@
 # Research experiment logs 实验研究记录
 目前进行Semantic Embedding和Faster-R-CNN的结合的工作，以此page作为实验过程记录。
 
+### 2021.12.1
+
+Raw word embedding tensor generation finished.
+
+Interface on different dimision embeddings finished.
+
+Modified three label words so it can be vectorized.
+
+>diningtable -> table
+>pottedplant -> plant
+>tvmonitor -> monitor
+
+Next step is debugging with voc2012 dataset. Remember that the classification layer was modified back to 512x1024, but input data are still 512x512.
+
 ### 2021.11.29
 
 Modify Faster-R-CNN module to add Self Attention module into classification subnet.
