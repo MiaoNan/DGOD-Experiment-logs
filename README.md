@@ -3,7 +3,9 @@
 
 ### 2021.12.1
 
-Raw word embedding tensor generation finished.
+Raw word embedding tensor generation module finished.
+
+Downloading 300d and 500d pretrained embeddings.
 
 Interface on different dimision embeddings finished.
 
@@ -19,7 +21,7 @@ Next step is debugging with voc2012 dataset. Remember that the classification la
 
 Modify Faster-R-CNN module to add Self Attention module into classification subnet.
 
-Downloading Word2Vec pretrained embeddings...
+Downloading Word2Vec pretrained embeddings...English 100 dim.
 
 ### 2021.11.26
 
@@ -30,7 +32,7 @@ Do take care of the size of input and output.
 
 ### 2021.11.25
 
-Giving up using Faster-R-CNN from torchvision because it is difficult to override those Class.
+Giving up using Faster-R-CNN from torchvision because it is difficult to override Class.
 
 Now using Faster-R-CNN from : https://github.com/lllsaaxx/Faster-RCNN
 
