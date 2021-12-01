@@ -15,7 +15,12 @@ Modified three label words so it can be vectorized.
 >pottedplant -> plant
 >tvmonitor -> monitor
 
-Next step is debugging with voc2012 dataset. Remember that the classification layer was modified back to 512x1024, but input data are still 512x512.
+~~Next step is debugging with voc2012 dataset. Remember that the classification layer was modified back to 512x1024, but input data are still 512x512.~~
+
+Now the shape of each tensor have been reshaped properly. But the model is loading the whole weights.
+
+Remove the weights, or modify the shape by adding several layers.
+
 
 ### 2021.11.29
 
