@@ -15,7 +15,9 @@ However, questions are listed as follow:
 1. Is there any difference between projecting feature map into semantic space and mapping into same dimension?
 2. Projection are same to referenced paper, mapping are to complicated?
 
-Besides, RTX 2060 have not enough memory for Faster-R-CNN, servers are needed now.
+~~Besides, RTX 2060 have not enough memory for Faster-R-CNN, servers are needed now.~~
+
+Size of input image can be reshaped in file ‘faster-rcnn.pytorch-pytorch-1.0/lib/model/utils/config.py’, line 63.
 
 
 ### 2021.12.1
