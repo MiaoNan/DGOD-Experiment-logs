@@ -1,5 +1,6 @@
-# Research experiment logs 实验研究记录
-目前进行Semantic Embedding和Faster-R-CNN的结合的工作，以此page作为实验过程记录。
+# Research experiment logs
+
+My work is now focusing on combining Semantic Information with Domain Generation, this page is used to write my experiment log. 
 
 ### 2021.12.20
 
