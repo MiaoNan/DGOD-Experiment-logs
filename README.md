@@ -1,6 +1,20 @@
 # Research experiment logs 实验研究记录
 目前进行Semantic Embedding和Faster-R-CNN的结合的工作，以此page作为实验过程记录。
 
+### 2021.12.20
+
+New Faster-R-CNN from: https://github.com/jwyang/faster-rcnn.pytorch/tree/pytorch-1.0
+
+Modify the classification layer in 'faster-rcnn.pytorch-pytorch-1.0/lib/model/faster_rcnn/vgg16.py', line 50.
+
+Batch size of classification layer could be changed in this project.
+
+However, questions are listed as follow:
+
+1. Is there any difference between projecting feature map into semantic space and mapping into same dimension?
+2. Projection are same to referenced paper, mapping are to complicated?
+
+
 ### 2021.12.1
 
 Raw word embedding tensor generation module finished.
