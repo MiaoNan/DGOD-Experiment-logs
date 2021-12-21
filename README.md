@@ -2,6 +2,10 @@
 
 My work is now focusing on combining Semantic Information with Domain Generation, this page is used to write my experiment log. 
 
+### 2021.12.21
+
+Modified Loss to L2, adding semantic embedding query module.
+
 ### 2021.12.20
 
 New Faster-R-CNN from: https://github.com/jwyang/faster-rcnn.pytorch/tree/pytorch-1.0
