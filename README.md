@@ -4,7 +4,15 @@ My work is now focusing on combining Semantic Information with Domain Generation
 
 ### 2021.12.21
 
-Modified Loss to L2, adding semantic embedding query module.
+Modified RCNN-loss to L2, adding semantic embedding query module.
+
+Mapping Feature Map to Semantic Vector, and calculate loss with true semantic vectors.
+
+Using small dataset, 1000 images. Do remember delete pkl files in:
+
+>'$Project_path/data/cache/' and '$dataset_path/ImageSets/Main'
+
+Next step is to overwrite acc calculation in test phase.
 
 ### 2021.12.20
 
