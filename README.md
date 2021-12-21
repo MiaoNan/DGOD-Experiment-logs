@@ -14,7 +14,7 @@ Using small dataset, 1000 images. Do remember delete pkl files in:
 
 >'$dataset_path/ImageSets/Main'
 
-Next step is to overwrite acc calculation in test phase.
+Next step is to overwrite mAP calculation in test phase.
 
 ### 2021.12.20
 
