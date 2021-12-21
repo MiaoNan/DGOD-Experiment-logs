@@ -10,7 +10,8 @@ Mapping Feature Map to Semantic Vector, and calculate loss with true semantic ve
 
 Using small dataset, 1000 images. Do remember delete pkl files in:
 
->'$Project_path/data/cache/' and '$dataset_path/ImageSets/Main'
+>'$Project_path/data/cache/'
+>'$dataset_path/ImageSets/Main'
 
 Next step is to overwrite acc calculation in test phase.
 
