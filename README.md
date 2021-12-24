@@ -117,7 +117,7 @@ Maybe some bugs in codes.
 Now using small dataset with only 1000 images. Do remember **DELETE** pkl files after training in:
 
 >'$Project_path/data/cache/'
-
+>
 >'$dataset_path/ImageSets/Main'
 
 Next step is to overwrite mAP calculation in test phase.
@@ -151,7 +151,9 @@ Size of input images can be reshaped (File ‘faster-rcnn.pytorch-pytorch-1.0/li
 * Modified three label words so as to make sure that those words can be vectorized.
 
 >diningtable -> table
+>
 >pottedplant -> plant
+>
 >tvmonitor -> monitor
 
 Downloading 300d and 500d pretrained embeddings.
@@ -191,13 +193,17 @@ Now using Faster-R-CNN from : https://github.com/lllsaaxx/Faster-RCNN
 
 * Experiment environment have been built on laptop, NOT server.
 
-System: Ubuntu 20.04.3 LTS
+System information:
 
-NVIDIA-SMI 460.91.03    Driver Version: 460.91.03    CUDA Version: 11.2
+>System: Ubuntu 20.04.3 LTS
+>
+>NVIDIA-SMI 460.91.03  Driver Version: 460.91.03  CUDA Version: 11.2
+>
+>Cuda compilation tools, release 11.2, V11.2.67
+>
+>Build cuda_11.2.r11.2/compiler.29373293_0
 
-Cuda compilation tools, release 11.2, V11.2.67   Build cuda_11.2.r11.2/compiler.29373293_0
-
-Pytorch was instlled by this command:
->pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+Pytorch was instlled by this command:  
+`pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html`
 
 See this page in detail: https://medium.com/analytics-vidhya/install-cuda-11-2-cudnn-8-1-0-and-python-3-9-on-rtx3090-for-deep-learning-fcf96c95f7a1
