@@ -1,6 +1,6 @@
 # Research experiment logs
 
-My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
+##My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
 
 ### 2021.12.24
 
@@ -45,8 +45,8 @@ The problem is column 0 have biggest value in each line after calculating cosine
 More bugs fixed, a line of weight init code in faster-rnn.py was found and modified.
 
 Deleted reduce dim layer from 4 to 1 directly, and add tanh after that layer.
-
 Separated se and bl codes for easy training and testing.
+Typeset this page.
 
 ### 2021.12.23
 
