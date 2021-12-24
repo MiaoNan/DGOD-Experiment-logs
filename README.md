@@ -4,7 +4,7 @@ My work is now focusing on combining Semantic Information with Domain Generation
 
 ### 2021.12.24
 
-Christmas Eve, chocolate drinks from zy, thx.
+Christmas Eve, Starbucks chocolate drinks from zy, thx.
 
 A bug was found in faster_rcnn.py, line 68.
 
@@ -40,11 +40,13 @@ Mean AP = 0.0017
 
 册那
 
+The problem is column 0 have biggest value in each line after calculating cosine similarity, maybe some bugs are hidding in nets.
+
 More bugs fixed, a line of weight init code in faster-rnn.py was found and modified.
 
 Deleted reduce dim layer from 4 to 1 directly, and add tanh after that layer.
 
-Separated se and bl codes.
+Separated se and bl codes for easy training and testing.
 
 ### 2021.12.23
 
