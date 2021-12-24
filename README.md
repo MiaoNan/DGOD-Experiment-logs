@@ -40,6 +40,12 @@ Mean AP = 0.0017
 
 册那
 
+More bugs fixed, a line of weight init code in faster-rnn.py was found and modified.
+
+Deleted reduce dim layer from 4 to 1 directly, and add tanh after that layer.
+
+Separated se and bl codes.
+
 ### 2021.12.23
 
 BaseLine:
