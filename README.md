@@ -1,6 +1,76 @@
 # Research experiment logs
 
-My work is now focusing on combining Semantic Information with Domain Generation, this page is used to write my experiment log. 
+My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
+
+### 2021.12.24
+
+Christmas Eve, chocolate drinks from zy, thx.
+
+A bug was found in faster_rcnn.py, line 68.
+
+Word vectors are generated from index of label words, not the word itself.
+
+Code in test_net.py also made this mistake, fixed.
+
+Bug fixed and retraining networks with 'true' semantic labels...
+
+### 2021.12.23
+
+BaseLine:
+
+AP for aeroplane = 0.5207
+AP for bicycle = 0.7173
+AP for bird = 0.5351
+AP for boat = 0.3100
+AP for bottle = 0.3818
+AP for bus = 0.6089
+AP for car = 0.7326
+AP for cat = 0.6954
+AP for chair = 0.3188
+AP for cow = 0.6530
+AP for diningtable = 0.3305
+AP for dog = 0.6586
+AP for horse = 0.7295
+AP for motorbike = 0.7040
+AP for person = 0.6577
+AP for pottedplant = 0.2458
+AP for sheep = 0.6090
+AP for sofa = 0.5029
+AP for train = 0.5915
+AP for tvmonitor = 0.5937
+Mean AP = 0.5548
+
+With Semantic Information:
+
+AP for aeroplane = 0.0017
+AP for bicycle = 0.1123
+AP for bird = 0.0058
+AP for boat = 0.0010
+AP for bottle = 0.0021
+AP for bus = 0.0033
+AP for car = 0.0183
+AP for cat = 0.0064
+AP for chair = 0.0182
+AP for cow = 0.0181
+AP for diningtable = 0.0000
+AP for dog = 0.0055
+AP for horse = 0.0285
+AP for motorbike = 0.0540
+AP for person = 0.1619
+AP for pottedplant = 0.0003
+AP for sheep = 0.0065
+AP for sofa = 0.0000
+AP for train = 0.0003
+AP for tvmonitor = 0.0000
+Mean AP = 0.0222
+
+Maybe some bugs in codes.
+
+### 2021.12.22
+
+Convert semantic vector to acc completely.
+
+Before feeding data into mAP calculation part, calculate cosine similarity as acc directly.
 
 ### 2021.12.21
 
