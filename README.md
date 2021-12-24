@@ -1,20 +1,19 @@
 # Research experiment logs
 
-##My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
+## My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
+
+---
 
 ### 2021.12.24
 
 Christmas Eve, Starbucks chocolate drinks from zy, thx.
 
-A bug was found in faster_rcnn.py, line 68.
+* A bug was found in faster_rcnn.py, line 68.
+* Word vectors are generated from index of label words, not the word itself.
+* Code in test_net.py also made this mistake, fixed.
+* Bug fixed and retraining networks with 'true' semantic labels...
 
-Word vectors are generated from index of label words, not the word itself.
-
-Code in test_net.py also made this mistake, fixed.
-
-Bug fixed and retraining networks with 'true' semantic labels...
-
-Result:
+Result after debugging once:
 
 AP for aeroplane = 0.0000
 AP for bicycle = 0.0002
@@ -42,79 +41,80 @@ Mean AP = 0.0017
 
 The problem is column 0 have biggest value in each line after calculating cosine similarity, maybe some bugs are hidding in nets.
 
-More bugs fixed, a line of weight init code in faster-rnn.py was found and modified.
+* More bugs fixed, a line of weight init code in faster-rnn.py was found and modified.
+* Deleted reduce dim layer from 4 to 1 directly, and add tanh after that layer.
+* Separated se and bl codes for easy training and testing.
+* Typeset this page.
 
-Deleted reduce dim layer from 4 to 1 directly, and add tanh after that layer.
-Separated se and bl codes for easy training and testing.
-Typeset this page.
+---
 
 ### 2021.12.23
 
 BaseLine:
 
-AP for aeroplane = 0.5207
-AP for bicycle = 0.7173
-AP for bird = 0.5351
-AP for boat = 0.3100
-AP for bottle = 0.3818
-AP for bus = 0.6089
-AP for car = 0.7326
-AP for cat = 0.6954
-AP for chair = 0.3188
-AP for cow = 0.6530
-AP for diningtable = 0.3305
-AP for dog = 0.6586
-AP for horse = 0.7295
-AP for motorbike = 0.7040
-AP for person = 0.6577
-AP for pottedplant = 0.2458
-AP for sheep = 0.6090
-AP for sofa = 0.5029
-AP for train = 0.5915
-AP for tvmonitor = 0.5937
-Mean AP = 0.5548
+AP for aeroplane = 0.5207  
+AP for bicycle = 0.7173  
+AP for bird = 0.5351  
+AP for boat = 0.3100  
+AP for bottle = 0.3818  
+AP for bus = 0.6089  
+AP for car = 0.7326  
+AP for cat = 0.6954  
+AP for chair = 0.3188  
+AP for cow = 0.6530  
+AP for diningtable = 0.3305  
+AP for dog = 0.6586  
+AP for horse = 0.7295  
+AP for motorbike = 0.7040  
+AP for person = 0.6577  
+AP for pottedplant = 0.2458  
+AP for sheep = 0.6090  
+AP for sofa = 0.5029  
+AP for train = 0.5915  
+AP for tvmonitor = 0.5937  
+Mean AP = 0.5548  
 
 With Semantic Information:
 
-AP for aeroplane = 0.0017
-AP for bicycle = 0.1123
-AP for bird = 0.0058
-AP for boat = 0.0010
-AP for bottle = 0.0021
-AP for bus = 0.0033
-AP for car = 0.0183
-AP for cat = 0.0064
-AP for chair = 0.0182
-AP for cow = 0.0181
-AP for diningtable = 0.0000
-AP for dog = 0.0055
-AP for horse = 0.0285
-AP for motorbike = 0.0540
-AP for person = 0.1619
-AP for pottedplant = 0.0003
-AP for sheep = 0.0065
-AP for sofa = 0.0000
-AP for train = 0.0003
-AP for tvmonitor = 0.0000
-Mean AP = 0.0222
+AP for aeroplane = 0.0017  
+AP for bicycle = 0.1123  
+AP for bird = 0.0058  
+AP for boat = 0.0010  
+AP for bottle = 0.0021  
+AP for bus = 0.0033  
+AP for car = 0.0183  
+AP for cat = 0.0064  
+AP for chair = 0.0182  
+AP for cow = 0.0181  
+AP for diningtable = 0.0000  
+AP for dog = 0.0055  
+AP for horse = 0.0285  
+AP for motorbike = 0.0540  
+AP for person = 0.1619  
+AP for pottedplant = 0.0003  
+AP for sheep = 0.0065  
+AP for sofa = 0.0000  
+AP for train = 0.0003  
+AP for tvmonitor = 0.0000  
+Mean AP = 0.0222  
 
 Maybe some bugs in codes.
 
+---
+
 ### 2021.12.22
 
-Convert semantic vector to acc completed.
+* Convert semantic vector to acc completed.
+* Before feeding data into mAP calculation module, calculate cosine similarity as acc directly. So we don't need modifiy mAP calculation module.
 
-Before feeding data into mAP calculation module, calculate cosine similarity as acc directly.
-
-So we don't need to modifiy mAP calculation module.
+---
 
 ### 2021.12.21
 
-Modified RCNN-cls-loss to L2, adding semantic embedding query module.
+* Modified RCNN-cls-loss to L2, adding semantic embedding query module.
+* Mapping Feature Map to Semantic Vector, and calculate loss with true semantic vectors.
 
-Mapping Feature Map to Semantic Vector, and calculate loss with true semantic vectors.
-
-Using small dataset, 1000 images. Do remember DELETE pkl files after training in:
+Now using small dataset with only 1000 images. Do remember **DELETE** pkl files after training in:
 
 >'$Project_path/data/cache/'
 
@@ -122,13 +122,14 @@ Using small dataset, 1000 images. Do remember DELETE pkl files after training in
 
 Next step is to overwrite mAP calculation in test phase.
 
+---
+
 ### 2021.12.20
 
 New Faster-R-CNN from: https://github.com/jwyang/faster-rcnn.pytorch/tree/pytorch-1.0
 
-Modified classification layer in 'faster-rcnn.pytorch-pytorch-1.0/lib/model/faster_rcnn/vgg16.py', line 50.
-
-Batch size of classification layer could be changed in this project, but we keep 1 as batch size.
+* Modified classification layer in 'faster-rcnn.pytorch-pytorch-1.0/lib/model/faster_rcnn/vgg16.py', line 50.
+* Batch size of classification layer could be changed in this project, but we keep 1 as batch size.
 
 Now, two questions are listed as follow:
 
@@ -140,40 +141,43 @@ Now, two questions are listed as follow:
 
 Size of input images can be reshaped (File ‘faster-rcnn.pytorch-pytorch-1.0/lib/model/utils/config.py’, line 63).
 
+---
 
 ### 2021.12.1
 
-Raw word embedding tensor generation module finished.
+* Raw word embedding tensor generation module finished.
+* Interface on different dimision embeddings finished.
 
-Downloading 300d and 500d pretrained embeddings.
-
-Interface on different dimision embeddings finished.
-
-Modified three label words so as to make sure that those words can be vectorized.
+* Modified three label words so as to make sure that those words can be vectorized.
 
 >diningtable -> table
 >pottedplant -> plant
 >tvmonitor -> monitor
 
+Downloading 300d and 500d pretrained embeddings.
+
 ~~Next step is debugging with voc2012 dataset. Remember that the classification layer was modified back to 512x1024, but input data are still 512x512.~~
 
-Now the shape of each tensor have been reshaped properly. But the model is loading the whole weights.
-
+Now the shape of each tensor have been reshaped properly. But the model is loading the whole weights.  
 Remove the weights, or modify the shape by adding several layers.
 
+---
 
 ### 2021.11.29
 
-Modified Faster-R-CNN module and added Self Attention module into classification subnet.
+* Modified Faster-R-CNN module and added Self Attention module into classification subnet.
 
 Downloading Word2Vec pretrained embeddings...100 dims.
 
+---
+
 ### 2021.11.26
 
-Self Attention module was built.
+* Self Attention module was built.
 
 Do take care of the size of input and output tensors.
 
+---
 
 ### 2021.11.25
 
@@ -181,9 +185,11 @@ Giving up using Faster-R-CNN from torchvision because it is difficult to overrid
 
 Now using Faster-R-CNN from : https://github.com/lllsaaxx/Faster-RCNN
 
+---
+
 ### 2021.11.22
 
-Experiment environment have been built on laptop, NOT server.
+* Experiment environment have been built on laptop, NOT server.
 
 System: Ubuntu 20.04.3 LTS
 
