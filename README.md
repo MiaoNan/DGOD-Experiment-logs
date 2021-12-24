@@ -14,6 +14,32 @@ Code in test_net.py also made this mistake, fixed.
 
 Bug fixed and retraining networks with 'true' semantic labels...
 
+Result:
+
+AP for aeroplane = 0.0000
+AP for bicycle = 0.0002
+AP for bird = 0.0000
+AP for boat = 0.0000
+AP for bottle = 0.0000
+AP for bus = 0.0000
+AP for car = 0.0000
+AP for cat = 0.0007
+AP for chair = 0.0000
+AP for cow = 0.0000
+AP for diningtable = 0.0000
+AP for dog = 0.0303
+AP for horse = 0.0000
+AP for motorbike = 0.0002
+AP for person = 0.0014
+AP for pottedplant = 0.0000
+AP for sheep = 0.0000
+AP for sofa = 0.0001
+AP for train = 0.0000
+AP for tvmonitor = 0.0002
+Mean AP = 0.0017
+
+册那
+
 ### 2021.12.23
 
 BaseLine:
