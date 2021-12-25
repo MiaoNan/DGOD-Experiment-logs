@@ -2,6 +2,36 @@
 
 ## My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
 
+### 2021.12.25
+
+Merry Christmas!
+
+Result after debugging twice:
+
+AP for aeroplane = 0.0023  
+AP for bicycle = 0.1045  
+AP for bird = 0.0527  
+AP for boat = 0.0021  
+AP for bottle = 0.0161  
+AP for bus = 0.0145  
+AP for car = 0.3028  
+AP for cat = 0.0893  
+AP for chair = 0.1002  
+AP for cow = 0.1342  
+AP for diningtable = 0.0006  
+AP for dog = 0.1770  
+AP for horse = 0.0709  
+AP for motorbike = 0.0476  
+AP for person = 0.4382  
+AP for pottedplant = 0.0026  
+AP for sheep = 0.1459  
+AP for sofa = 0.0108  
+AP for train = 0.0136  
+AP for tvmonitor = 0.0456  
+Mean AP = 0.0886  
+
+However, background it still have higgest probability.
+
 ---
 
 ### 2021.12.24
