@@ -38,7 +38,7 @@ Mean AP = 0.0291
 Here I guess I might change the method of getting acc.Cosine similarity may not be good enough.
 
 After studying mAP calculation, the problem is that most ROIs have higgest acc on background so that these data will not be feed into mAP calculation.  
-There are several possibilities:  
+There are several possible problems:  
 * High background/background rate(But why it didn't affect one hot encoding).  
 * Cosine similarity.  
 * Mapping layers from feature map to semantic vector are not deep enough(Now deepest is 4).  
