@@ -13,14 +13,45 @@ This time I use nn.MSELoss and initialized as a object.
 
 God bless this code...
 
+AP for aeroplane = 0.0000  
+AP for bicycle = 0.0047  
+AP for bird = 0.0085  
+AP for boat = 0.0001  
+AP for bottle = 0.0000  
+AP for bus = 0.0000  
+AP for car = 0.0134  
+AP for cat = 0.0111  
+AP for chair = 0.0019  
+AP for cow = 0.0296  
+AP for diningtable = 0.0012  
+AP for dog = 0.0215  
+AP for horse = 0.0238  
+AP for motorbike = 0.0119  
+AP for person = 0.4322  
+AP for pottedplant = 0.0000  
+AP for sheep = 0.0114  
+AP for sofa = 0.0066  
+AP for train = 0.0000  
+AP for tvmonitor = 0.0034  
+Mean AP = 0.0291  
+
+Here I guess I might change the method of getting acc.Cosine similarity may not be good enough.
+
+After studying mAP calculation, the problem is that most ROIs have higgest acc on background so that these data will not be feed into mAP calculation.  
+There are several possibilities:  
+* High background/background rate(But why it didn't affect one hot encoding).  
+* Cosine similarity.  
+* Mapping layers from feature map to semantic vector are not deep enough(Now deepest is 4).  
+
+Next step is to try Plan B, and ask tutor for help.
+
 ---
 
 ### 2021.12.25
 
 Merry Christmas!
 
-Result after debugging twice:
-
+Result after debugging twice:  
 AP for aeroplane = 0.0023  
 AP for bicycle = 0.1045  
 AP for bird = 0.0527  
