@@ -2,6 +2,13 @@
 
 ## My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
 
+### 2021.12.27
+
+* Change Loss from Smooth L1 to MSE.
+* Add more layers after ROI Pooling.
+
+---
+
 ### 2021.12.25
 
 Merry Christmas!
