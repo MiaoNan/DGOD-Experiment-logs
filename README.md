@@ -7,6 +7,12 @@
 * Change Loss from Smooth L1 to MSE.
 * Add more layers after ROI Pooling.
 
+Is nn functional must be initialized in __init__()? Maybe this is another bug before.
+
+This time I use nn.MSELoss and initialized as a object.
+
+God bless this code...
+
 ---
 
 ### 2021.12.25
