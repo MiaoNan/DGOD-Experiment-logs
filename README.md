@@ -30,6 +30,8 @@ Mean AP = 0.5548
 
 Plan B is to project feature map into semantic space, and semantic space are argumented by self attention module.
 
+Codes are not completely to the reference paper, and the code are private. So I implemented by myself.
+
 Result:
 
 AP for aeroplane = 0.3687  
@@ -63,7 +65,7 @@ It still has performance drop.
 
 Is nn functional must be initialized in __init__()? Maybe this is another bug before.
 
-This time I use nn.MSELoss and initialized as a object.
+This time I use nn.MSELoss and initialized to be an object.
 
 God bless this code...
 
@@ -89,7 +91,7 @@ AP for train = 0.0000
 AP for tvmonitor = 0.0034  
 Mean AP = 0.0291  
 
-Here I guess I might change the method of getting acc.Cosine similarity may not be good enough.
+Here I guess I might change the method of getting acc. Cosine similarity may not be good enough.
 
 After studying mAP calculation, the problem is that most ROIs have higgest acc on background so that these data will not be feed into mAP calculation.  
 There are several possible problems:  
