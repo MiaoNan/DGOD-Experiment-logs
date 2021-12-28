@@ -2,6 +2,60 @@
 
 ## My work is now focusing on combining Semantic Information with Domain Generation, so I write my experiment log here. 
 
+Baseline Result, it will change according to experience conducting.
+
+AP for aeroplane = 0.5207  
+AP for bicycle = 0.7173  
+AP for bird = 0.5351  
+AP for boat = 0.3100  
+AP for bottle = 0.3818  
+AP for bus = 0.6089  
+AP for car = 0.7326  
+AP for cat = 0.6954  
+AP for chair = 0.3188  
+AP for cow = 0.6530  
+AP for diningtable = 0.3305  
+AP for dog = 0.6586  
+AP for horse = 0.7295  
+AP for motorbike = 0.7040  
+AP for person = 0.6577  
+AP for pottedplant = 0.2458  
+AP for sheep = 0.6090  
+AP for sofa = 0.5029  
+AP for train = 0.5915  
+AP for tvmonitor = 0.5937  
+Mean AP = 0.5548  
+
+### 2021.12.28
+
+Plan B is to project feature map into semantic space, and semantic space are argumented by self attention module.
+
+Result:
+
+AP for aeroplane = 0.3687  
+AP for bicycle = 0.6198  
+AP for bird = 0.4262  
+AP for boat = 0.2318  
+AP for bottle = 0.3391  
+AP for bus = 0.4852  
+AP for car = 0.6773  
+AP for cat = 0.5676  
+AP for chair = 0.2627  
+AP for cow = 0.5325  
+AP for diningtable = 0.3137  
+AP for dog = 0.5510  
+AP for horse = 0.6349  
+AP for motorbike = 0.6137  
+AP for person = 0.6086  
+AP for pottedplant = 0.2170  
+AP for sheep = 0.5128  
+AP for sofa = 0.3862  
+AP for train = 0.4454  
+AP for tvmonitor = 0.5008  
+Mean AP = 0.4647  
+
+It still has performance drop.
+
 ### 2021.12.27
 
 * Change Loss from Smooth L1 to MSE.
