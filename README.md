@@ -26,6 +26,12 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### 2022.1.7
+
+Replace cosine similarity with L2 distrance. The problem still exists.
+
+Tired.
+
 ### 2021.12.28
 
 Plan B is to project feature map into semantic space, and semantic space are argumented by self attention module.
