@@ -26,6 +26,11 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### 2022.1.14
+
+在train阶段，会输出约2000个proposal，但只会抽取其中256个proposal来训练RPN的cls+reg结构（其中，128个前景proposal用来训练cls+reg。  
+So inbalance problem is not a problem.  
+
 ### 2022.1.7
 
 Replace cosine similarity with L2 distrance. The problem still exists.
