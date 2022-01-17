@@ -28,7 +28,9 @@ Mean AP = 0.5548
 
 ### 2022.1.16
 
-* Consider using metric learning, which compare the distance between query image and class prototype.
+* Consider using Metric Learning, which compare the distance between query image and class prototype.  
+* So new type losses are need to be learned.
+https://blog.csdn.net/xys430381_1/article/details/90705421
 
 ### 2022.1.14
 
