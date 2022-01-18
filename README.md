@@ -26,6 +26,15 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### 2022.1.18
+
+*Reduce FC layer from 4 to 1 after ROI pooling.
+
+Before: 0.1(logs yesterday losted)  
+After: 0.0589  
+
+So it may be necessary to use class prototype!
+
 ### 2022.1.16
 
 * Consider using Metric Learning, which compare the distance between query image and class prototype.  
