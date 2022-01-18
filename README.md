@@ -30,7 +30,7 @@ Mean AP = 0.5548
 
 * Reduce FC layer from 4 to 1 after ROI pooling.
 
-Before: 0.1(logs yesterday losted)  
+Before: 0.1(logs lost yesterday)  
 After: 0.0589  
 
 So it may be necessary to use class prototype!
