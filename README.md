@@ -28,7 +28,7 @@ Mean AP = 0.5548
 
 ### 2022.1.18
 
-*Reduce FC layer from 4 to 1 after ROI pooling.
+* Reduce FC layer from 4 to 1 after ROI pooling.
 
 Before: 0.1(logs yesterday losted)  
 After: 0.0589  
