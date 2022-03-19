@@ -26,6 +26,12 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### 2022.3.18
+
+* Add GRL to att_faster-R-CNN  
+
+It's necessary to add semantic informations
+
 ### 2022.1.18
 
 * Reduce FC layer from 4 to 1 after ROI pooling.
