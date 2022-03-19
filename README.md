@@ -28,10 +28,10 @@ Mean AP = 0.5548
 
 ### 2022.3.18
 
-* Add GRL to att_faster-R-CNN (Without loss)
+* Add GRL to att_faster-R-CNN
 * Add semantic information projection in both base and roi.
 
-Next to add loss on these codes.
+Next to add loss on these codes, and DA settings.
 
 ### 2022.1.18
 
