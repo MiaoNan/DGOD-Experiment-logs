@@ -26,8 +26,15 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### 2022.4.1
+
+* Server environment installed, now the code can run on the server.
+* Dataset I/O finished.
+* Loss added, and the whole code can run now.
 
 while testing, the label of test set should be the same with source domain.
+
+Next step is to add ROI on base feature.
 
 ### 2022.3.18
 
