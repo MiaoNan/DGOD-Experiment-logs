@@ -26,6 +26,12 @@ AP for train = 0.5915
 AP for tvmonitor = 0.5937  
 Mean AP = 0.5548  
 
+### Add new dataset
+
+* Modify __set in factory.py
+* add xxx.py into lib/dataset 
+
+
 ### 2022.4.1
 
 * Server environment installed, now the code can run on the server.
