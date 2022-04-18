@@ -30,6 +30,7 @@ Mean AP = 0.5548
 
 * Modify __set in factory.py
 * add xxx.py into lib/dataset 
+* Modify lib/model/utils/parser_func.py
 
 
 ### 2022.4.1
