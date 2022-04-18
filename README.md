@@ -32,6 +32,8 @@ Mean AP = 0.5548
 * add xxx.py into lib/dataset 
 * Modify lib/model/utils/parser_func.py
 
+* And bdd100k.py modified for the different classes
+
 
 ### 2022.4.1
 
